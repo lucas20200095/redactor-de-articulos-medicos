@@ -1,0 +1,45 @@
+# 🩺 Medical Article Summarizer
+
+Herramienta en **Python** que utiliza **IA (OpenAI API)** y **procesamiento de lenguaje natural (NLP)** para analizar, organizar y **resumir artículos o libros médicos en PDF**.  
+El objetivo es facilitar a médicos residentes, estudiantes e investigadores el acceso rápido a la información clave de la literatura científica.
+
+---
+
+## 🚀 Características
+- 📄 Procesa PDFs médicos detectando **Partes, Capítulos y Secciones** automáticamente.  
+- 🔍 Extrae contenido relevante, ignorando índices, referencias y páginas sin valor clínico.  
+- 🧾 Resume siguiendo la estructura científica **IMRyD**:
+  - Introducción  
+  - Métodos  
+  - Resultados  
+  - Discusión  
+- 📚 Genera una **base de conocimiento en JSON** para consultas estructuradas.  
+- 📝 Exporta resúmenes en **Markdown**, organizados en carpetas por capítulos/secciones.  
+- 👩‍⚕️ Usa **lenguaje técnico pero accesible**, pensado para residentes y estudiantes de medicina.  
+
+---
+
+## 🛠️ Tecnologías utilizadas
+- Python 3.10+  
+- [PyMuPDF](https://pymupdf.readthedocs.io/) (`fitz`)  
+- [OpenAI API](https://platform.openai.com/)  
+- `pydantic`  
+- `termcolor`  
+- `dotenv`  
+
+---
+
+## ⚙️ Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/medical-article-summarizer.git
+   cd medical-article-summarizer
+2. Crea y activa un entorno virtual:
+python -m venv venv
+source venv/bin/activate   # En Linux/Mac
+venv\Scripts\activate      # En Windows
+3. Instala dependencias:
+pip install -r requirements.txt
+4. Crea un archivo .env en la raíz del proyecto con tu API Key de OpenAI:
+OPENAI_API_KEY=tu_api_key_aqui
