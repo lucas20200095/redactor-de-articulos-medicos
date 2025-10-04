@@ -1,0 +1,15 @@
+▶️ Uso
+
+Coloca tu archivo PDF en la carpeta book_analysis/pdfs/
+(o modifica la variable PDF_NAME en el script).
+
+Ejecuta el programa:
+
+python main.py
+
+
+Al finalizar, se generarán:
+
+📂 book_analysis/knowledge_bases/ → archivo JSON con la base de conocimiento.
+
+📂 book_analysis/summaries/ → resúmenes en Markdown organizados por capítulos y secciones.
